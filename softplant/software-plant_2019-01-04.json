@@ -1,0 +1,431 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-01-04T11:36:31.975Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_0d7c5ea0f9e1448ba1794f9acb587533",
+			"created": 1545404349322,
+			"description": "",
+			"modified": 1545404349322,
+			"name": "software-plant",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_eaa7c100b475484a9a82222d94ac3faa",
+			"color": null,
+			"created": 1545404349339,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1545404349339,
+			"modified": 1545404349339,
+			"name": "New Environment",
+			"parentId": "wrk_0d7c5ea0f9e1448ba1794f9acb587533",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_26c32bcccad94c9cb1ff797d76d91408",
+			"cookies": [
+				{
+					"creation": "2018-12-21T19:23:46.836Z",
+					"domain": "swapi.co",
+					"expires": "2019-12-21T19:23:45.000Z",
+					"hostOnly": false,
+					"httpOnly": true,
+					"id": "9852285372181799",
+					"key": "__cfduid",
+					"lastAccessed": "2018-12-21T19:23:46.836Z",
+					"path": "/",
+					"secure": true,
+					"value": "d01ce8275829f5d79c0fd517f1c9afdd01545420225"
+				},
+				{
+					"creation": "2019-01-04T10:40:47.974Z",
+					"domain": "filmreplant.local",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "22875449964439643",
+					"key": "JSESSIONID",
+					"lastAccessed": "2019-01-04T10:40:47.974Z",
+					"path": "/",
+					"value": "1FFDA5BD910BD93CF3294CFE3E525015"
+				}
+			],
+			"created": 1545404349342,
+			"modified": 1546598447977,
+			"name": "Default Jar",
+			"parentId": "wrk_0d7c5ea0f9e1448ba1794f9acb587533",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"created": 1545404371122,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1545404371122,
+			"modified": 1545404371122,
+			"name": "localhost",
+			"parentId": "wrk_0d7c5ea0f9e1448ba1794f9acb587533",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_0df88c16ccc140faa2a0674018ffc306",
+			"authentication": {},
+			"body": {},
+			"created": 1545420216655,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1545420216655,
+			"method": "GET",
+			"modified": 1546523792519,
+			"name": "test",
+			"parameters": [],
+			"parentId": "wrk_0d7c5ea0f9e1448ba1794f9acb587533",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://swapi.co/api/people/?search=r2 ",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0df4ec5c815143088629cdb3cee5c8f2",
+			"authentication": {},
+			"body": {},
+			"created": 1546089111011,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1545412293888.5,
+			"method": "GET",
+			"modified": 1546210217248,
+			"name": "test (Copy)",
+			"parameters": [],
+			"parentId": "wrk_0d7c5ea0f9e1448ba1794f9acb587533",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://swapi.co/api/people/?search=Luke Skywalker",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e965ad5da91b4774aeaafc02f48b2323",
+			"authentication": {},
+			"body": {},
+			"created": 1546120802038,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1545408332505.25,
+			"method": "GET",
+			"modified": 1546601763435,
+			"name": "test (Copy) (Copy)",
+			"parameters": [],
+			"parentId": "wrk_0d7c5ea0f9e1448ba1794f9acb587533",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://swapi.co/api/films/?search=A New Hope",
+			"_type": "request"
+		},
+		{
+			"_id": "req_eae74d048ce74d0784728df612e3cfdd",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":\"r2\",\n\t\"planetName\":\"Naboo\"\n}"
+			},
+			"created": 1545408202437,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1544160299658,
+			"method": "PUT",
+			"modified": 1546598458904,
+			"name": "create-report",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/api/v1/report",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3bb79db00ec94511a2ac3f0a70716e20",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":null,\n\t\"planetName\":\"bob\"\n}"
+			},
+			"created": 1545408386226,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543538259470,
+			"method": "PUT",
+			"modified": 1546555542879,
+			"name": "create-report BAD-PARAMS",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/api/v1/report",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4ebe4fb2c53e4896abea282d4e53289f",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":\"Vader\",\n\t\"planetName\":\"Tatooine\"\n}"
+			},
+			"created": 1545412321351,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543227239376,
+			"method": "DELETE",
+			"modified": 1546598102878,
+			"name": "report delete BAD",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/error",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b2c9c1e8802d48678ac4459f47759170",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":\"asta lawista\",\n\t\"planetName\":\"earth\"\n}"
+			},
+			"created": 1545418190094,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1544160299708,
+			"method": "GET",
+			"modified": 1546598225954,
+			"name": "get report 404",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/error",
+			"_type": "request"
+		},
+		{
+			"_id": "req_55cdd32cb6f94177a3fb36b385bf95b5",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":\"r2\",\n\t\"planetName\":\"Naboo\"\n}"
+			},
+			"created": 1546528441269,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1544160299683,
+			"method": "GET",
+			"modified": 1546601723155,
+			"name": "get report ok",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/api/v1/report",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1c28b4048247434eb1bb9b2a5b1351ce",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":\"Vader\",\n\t\"planetName\":\"Tatooine\"\n}"
+			},
+			"created": 1546529349849,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1544160299670.5,
+			"method": "GET",
+			"modified": 1546598071778,
+			"name": "get report2 ok",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/api/v1/report",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f99f7c33c8244b55b5da46961ea6a7ef",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":\"C-3PO\",\n\t\"planetName\":\"Tatooine\"\n}"
+			},
+			"created": 1546529387911,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543849279564,
+			"method": "PUT",
+			"modified": 1546601708754,
+			"name": "create-report2",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/api/v1/report",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1d1d6484e5ab4414bcbb52ff668d2efe",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":\"Vader\",\n\t\"planetName\":\"Tatooine\"\n}"
+			},
+			"created": 1546536713841,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543693769517,
+			"method": "PUT",
+			"modified": 1546598193759,
+			"name": "create-report3",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/api/v1/report",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6fc26dd54e134755be6dc013bee1aeaf",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"characterPhrase\":null,\n\t\"planetName\":\"earth\"\n}"
+			},
+			"created": 1546550599715,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_cc606e10ba084ad0ae32610586274898",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1544160299695.5,
+			"method": "GET",
+			"modified": 1546550618660,
+			"name": "get report bad criteria",
+			"parameters": [],
+			"parentId": "fld_2794c88e3548439bb8351bd2b2e44304",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://filmreplant.local:8080/api/v1/report",
+			"_type": "request"
+		}
+	]
+}
