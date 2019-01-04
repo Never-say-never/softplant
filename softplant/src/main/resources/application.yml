@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: development
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/replantt;DB_CLOSE_DELAY=-1
+    username: root
+    password: pass
+
+# hibernate
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        ddl-auto: update
+        show_sql: true
+
+# http://localhost:8080/h2-console
+  h2:
+    console:
+      enabled: true
+
+# logger
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+external:
+  host: https://swapi.co/api/
