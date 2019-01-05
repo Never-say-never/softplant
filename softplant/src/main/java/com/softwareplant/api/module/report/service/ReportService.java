@@ -32,7 +32,7 @@ public class ReportService implements IReportService {
                 .orElseThrow(ReportNotFoundException::new);
     }
 
-    @Transactional
+    @Transactional(rollbackFor = SwapiInvalidResponseException.class)
     @Override
     public void createReport(Criteria criteria) throws ReportNotFoundException, SwapiInvalidResponseException {
         if(reportDao.findByHash(criteria.getHash()).isPresent()) {
@@ -56,8 +56,8 @@ public class ReportService implements IReportService {
                         })
                         .collect(Collectors.toList())
                     ));
-            } catch (JsonProcessingException e) {
-                e.printStackTrace();
+            }
+            catch (JsonProcessingException e) {
                 log.error("Exception: " + e.getMessage());
                 throw new SwapiInvalidResponseException();
             }
